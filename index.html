@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Freelance Marketplace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Student Freelance Marketplace</h1>
+        <p>Find students for small tasks or post your work!</p>
+    </header>
+
+    <!-- Task Form -->
+    <section id="post-task">
+        <h2>Post a Task</h2>
+        <form id="taskForm">
+            <input type="text" id="taskName" placeholder="Task Name" required>
+            <input type="text" id="taskDesc" placeholder="Task Description" required>
+            <input type="number" id="taskPrice" placeholder="Price (₹)" required>
+            <button type="submit">Post Task</button>
+        </form>
+    </section>
+
+    <!-- Tasks Display -->
+    <section id="tasks-list">
+        <h2>Available Tasks</h2>
+        <input type="text" id="searchInput" placeholder="Search tasks..." />
+        <div id="tasksContainer">
+            <!-- Posted tasks will appear here -->
+        </div>
+    </section>
+
+    <script src="project.js"></script>
+
+</body>
+</html>
